@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador / Desencriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+  </head>
+
+  <body>
+    <header>
+
+      <img class="logo" src="imagenes/logo.jpg" alt="logo Alura">
+
+      <h1>Alura challenge 1: Encriptador - desencriptador de texto</h1>
+
+      <section>
+        
+        <img class="boton_menu" src="imagenes/boton_menu.png" alt="boton menu" title="Acerca de ...">
+
+        <div class="menu">
+
+          <p class="caracteristicas_version"><strong>Acerca del encriptador - desencriptador v1.17522</strong><br>
+            -Posee botón de encriptación y desencriptación.<br>
+            -Posee validación de texto ingresado.<br>
+            -Dicha validación muestra mensaje de error si el texto ingresado no cumple las especificaciones adecuadas.<br>
+            -Posee botón de copiado de texto a encriptar / desencriptar.<br>
+            -Muestra mensaje de texto copiado al presionar dicho botón.<br>
+            -Botones estilizados con captura de eventos.<br>
+            -Posee limpieza y focalización en la caja de ingreso de texto una vez encriptado / desencriptado el mismo.<br>
+            -Botón de menú con características de la versión actual.<br>
+            -Menú despleglable con botón para cerrar ventana incluido.
+          </p>
+
+          <img class="boton_cerrar" src="imagenes/boton_cerrar.png" alt="botón cerrar menú">
+        </div>
+      </section>
+    </header>
+    
+    <main>
+
+      <section class=seccion_izquierda>
+
+        <textarea type="text" class="input_encriptar_desencriptar" placeholder="Ingrese el texto aquí"></textarea>
+
+        <div class="advertencia">
+
+          <img class="exclamation_circle" src="imagenes/exclamation-circle-fill.jpg" alt="círculo con signo de exclamación">
+
+          <p class="aclaracion">Solo letras minúsculas y sin acentos ni caracteres especiales.</p>
+        </div>
+        
+        <div class="botones_seccion_izq">
+
+          <button class="boton_encriptar">Encriptar</button>
+
+          <button class="boton_desencriptar">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="seccion_derecha">
+
+        <img class="rectangulo_seccion_der" src="imagenes/rectangle.jpg" alt="rectángulo contenedor seccion derecha">
+
+        <div class="pantalla_inicial_seccion_der">
+          
+          <img class="muneco" src="imagenes/muñeco.jpg" alt="muñeco buscando mensaje">
+
+          <p class="mensaje_no_encontrado">Ningún mensaje fue encontrado</p>
+
+          <p class="mensaje_ingresar_texto">Ingrese el texto que desea encriptar o desencriptar</p>
+        </div>
+
+        <div class="pantalla_final_seccion_der">
+
+          <textarea type="text" class="input_mostrar_resultado"></textarea>
+
+          <button class="boton_copiar">Copiar</button>
+        </div>
+
+        <div class="alerta_copiado">
+          
+          <p class="texto_alerta_copiado">El texto fue copiado.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copyright">© Copyright CrisLi Desarrollos Web - 2022.<br>Cristian Raúl Lista diseñador web.<br>Contacto: cristian_raul76@hotmail.com</p>
+    </footer>
+
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
